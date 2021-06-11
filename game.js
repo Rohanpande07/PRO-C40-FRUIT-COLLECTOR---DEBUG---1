@@ -63,15 +63,7 @@ class Game{
 
                          
                      }
-                    
-                     //text to display player score.
-
-                     
-                 
                  }
-                
-                
-                 
 
                 if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
                     player.distance -= 10
@@ -103,10 +95,6 @@ class Game{
                  }
                  
                   if (player.index !== null) {
-                     //fill code here, to destroy the objects. (Use the one in the class project 40)
-                     // add the condition to calculate the score. 
-                     //and use update() to update the values in the database.
-
                      player.score =player.score+1;
                   }
                 
