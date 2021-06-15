@@ -94,8 +94,14 @@ class Game{
                      
                  }
                  
-                  if (player.index !== null) {
-                     player.score =player.score+1;
+                 if (player.index !== null) {
+                    for(var i=0;i<fruitGroup.length;i++){
+                        if(fruitGroup.get(i).isTouching(players[player.index-1])){
+                           fruitGroup.get(i).destroy();
+                           console.log(player1);
+                           player.update();
+                        }
+                     }
                   }
                 
                   
