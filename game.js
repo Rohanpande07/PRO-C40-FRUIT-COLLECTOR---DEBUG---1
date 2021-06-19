@@ -101,6 +101,10 @@ class Game{
                            console.log(player1);
                            player.update();
                         }
+                        if(fruitGroup.get(i).isTouching(player1)){
+                            fruitGroup.get(i).destroy();
+                            player.update();
+                         }
                      }
                   }
                 
